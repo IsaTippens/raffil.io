@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a,b){return {staticAssetsBase:"\u002Fraffil.io\u002F_nuxt\u002Fstatic\u002F1645368880",layout:"mainLayout",error:a,serverRendered:true,routePath:b,config:{_app:{basePath:"\u002Fraffil.io\u002F",assetsPath:"\u002Fraffil.io\u002F_nuxt\u002F",cdnURL:a},http:{browserBaseURL:b}}}}(null,"\u002F"));

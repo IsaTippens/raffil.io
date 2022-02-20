@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/", {data:[{}],fetch:{"IndexPage:0":{timestamp:new Date(1645368881918),machineTime:new Date(1645368881493)}},mutations:void 0});

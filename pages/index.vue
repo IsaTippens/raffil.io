@@ -29,21 +29,21 @@ export default {
       machineTime: "",
     };
   },
+  created() {
+    setInterval(() => {
+      this.machineTime = new Date(Date.now());
+    }, 1000);
+  },
   async fetch() {
     let url = "https://api.binance.com/api/v3/time";
-    await this.$http.$get(url).then(response => {
-      console.log("GOT RESPONSE")
-      console.log(response)
+    await this.$http.$get(url).then((response) => {
+      console.log("GOT RESPONSE");
+      console.log(response);
       let time = response.serverTime;
       var date = new Date(time);
       console.log(date);
-      this.timestamp = date
-      this.machineTime = new Date(Date.now());
-      setInterval(() => {
-        this.machineTime = new Date(Date.now());
-      }, 1000);
+      this.timestamp = date;
     });
   },
-
 };
 </script>
