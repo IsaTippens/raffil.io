@@ -9,7 +9,8 @@
 
         <div class="container mx-auto">
           <div class="text-xl">Raffil using server time</div>
-          <div>At site generation: {{ timestamp }}</div>
+          <div class="text-lg">Binance: GET https://api.binance.com/api/v3/time</div>
+          <div>{{ timestamp }}</div>
         </div>
       </div>
     </div>
@@ -29,12 +30,10 @@ export default {
       machineTime: "",
     };
   },
-  created() {
+  async mounted() {
     setInterval(() => {
       this.machineTime = new Date(Date.now());
     }, 1000);
-  },
-  async fetch() {
     let url = "https://api.binance.com/api/v3/time";
     await this.$http.$get(url).then((response) => {
       console.log("GOT RESPONSE");
