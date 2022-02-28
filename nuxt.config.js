@@ -1,6 +1,6 @@
 export default {
   router: {
-    base: '/raffil.io/'
+    base: '/'
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
