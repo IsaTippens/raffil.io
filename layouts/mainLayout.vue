@@ -1,34 +1,119 @@
 <template>
   <div class="h-full justify-between">
-    <header class="h-24 sm:h-24 flex items-center z-30 w-full">
-      <div class="container mx-auto px-6 flex items-center justify-between">
-        <div class="text-green-400 font-semibold text-3xl">Raffil.io</div>
-        <div class="flex items-center">
-          <nav
-            class="
-              dark:text-white
-              uppercase
-              text-lg
-              lg:flex
-              items-center
-              hidden
-            "
-          >
-            <NuxtLink to="/" class="py-2 px-6 flex"> Home </NuxtLink>
-            <NuxtLink to="/about" class="py-2 px-6 flex"> About </NuxtLink>
-            <NuxtLink to="/contact" class="py-2 px-6 flex"> Contact </NuxtLink>
-            <NuxtLink to="/app" class="py-2 px-6 flex bg-gradient-to-r
-          from-blue-100
-          to-green-100 rounded-full text-green-400 drop-shadow">App</NuxtLink>
-          </nav>
-          <button class="lg:hidden flex flex-col ml-4">
-            <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1"> </span>
-            <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1"> </span>
-            <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1"> </span>
-          </button>
+    <nav class="w-full">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="text-green-400 font-semibold text-3xl">Raffil.io</div>
+          <div class="flex items-center">
+            <div
+              class="
+                dark:text-white
+                uppercase
+                text-lg
+                lg:flex
+                items-center
+                hidden
+              "
+            >
+              <NuxtLink to="/" class="py-2 px-6 flex"> Home </NuxtLink>
+              <NuxtLink to="/about" class="py-2 px-6 flex"> About </NuxtLink>
+              <NuxtLink to="/contact" class="py-2 px-6 flex">
+                Contact
+              </NuxtLink>
+              <NuxtLink
+                to="/app"
+                class="
+                  py-2
+                  px-6
+                  flex
+                  bg-gradient-to-r
+                  from-blue-100
+                  to-green-100
+                  rounded-full
+                  text-green-400
+                  drop-shadow
+                "
+                >App</NuxtLink
+              >
+            </div>
+
+            <button
+              @click="toggle"
+              class="md:hidden flex flex-col ml-4 focus:outline-none"
+            >
+              <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1"> </span>
+              <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1"> </span>
+              <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1"> </span>
+            </button>
+          </div>
         </div>
       </div>
-    </header>
+      <div :class="[isOpen ? '' : 'hidden', 'md:hidden']">
+        <div class="px-2 pt-2 pb-3 sm:px-3">
+          <NuxtLink
+            to="/"
+            class="
+              block
+              px-3
+              py-2
+              rounded-md
+              text-base
+              font-medium
+              bg-green-400
+              focus:outline-none focus:bg-green-200
+            "
+            >Home</NuxtLink
+          >
+          <NuxtLink
+            to="/about"
+            class="
+              mt-1
+              block
+              px-3
+              py-2
+              rounded-md
+              text-base
+              font-medium
+              hover:bg-green-200
+              focus:outline-none focus:bg-green-200
+            "
+            >About</NuxtLink
+          >
+          <NuxtLink
+            to="/contact"
+            class="
+              mt-1
+              block
+              px-3
+              py-2
+              rounded-md
+              text-base
+              font-medium
+              hover:bg-green-200
+              focus:outline-none focus:bg-green-200
+            "
+            >Contact</NuxtLink
+          >
+        </div>
+        <div class="px-2 pt-2 pb-3 border-t border-gray-700">
+          <NuxtLink
+            to="/app"
+            class="
+              mt-1
+              block
+              px-3
+              py-2
+              rounded-md
+              text-base
+              font-medium
+              hover:bg-green-200
+              focus:outline-none focus:bg-green-200
+            "
+            >App</NuxtLink
+          >
+        </div>
+      </div>
+    </nav>
     <Nuxt />
     <footer
       class="
@@ -99,9 +184,15 @@
 export default {
   data() {
     return {
+      isOpen: false,
       year: new Date().getFullYear(),
     };
   },
   mounted() {},
+  methods: {
+    toggle() {
+      this.isOpen = !this.isOpen;
+    },
+  },
 };
 </script>

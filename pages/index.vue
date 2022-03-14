@@ -63,7 +63,118 @@
               to-green-200
               rounded
             "
-          ></div>
+          >
+           <div class="mt-5 md:mt-0 md:col-span-2">
+              <!--FORM-->
+              <form action="#" method="POST">
+                <div class="shadow sm:rounded-md sm:overflow-hidden">
+                  <div class="px-4 py-5 bg-white space-y-6 sm:p-6">
+                    <div class="grid grid-cols-3 gap-6">
+                      <div class="col-span-3 sm:col-span-2">
+                        <label
+                          for="company-website"
+                          class="block text-sm font-medium text-gray-700"
+                        >
+                          Website
+                        </label>
+                        <div class="mt-1 flex rounded-md shadow-sm">
+                          <span
+                            class="
+                              inline-flex
+                              items-center
+                              px-3
+                              rounded-l-md
+                              border border-r-0 border-gray-300
+                              bg-gray-50
+                              text-gray-500 text-sm
+                            "
+                          >
+                            http://
+                          </span>
+                          <input
+                            type="text"
+                            name="company-website"
+                            id="company-website"
+                            class="
+                              focus:ring-indigo-500 focus:border-indigo-500
+                              flex-1
+                              block
+                              w-full
+                              rounded-none rounded-r-md
+                              sm:text-sm
+                              border-gray-300
+                            "
+                            placeholder="www.example.com"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-span-6 sm:col-span-3">
+                      <label
+                        for="items"
+                        class="block text-sm font-medium text-gray-700"
+                        >Dropdown Menu</label
+                      >
+                      <select
+                        id="items"
+                        name="items"
+                        autocomplete="country-name"
+                        class="
+                          mt-1
+                          block
+                          w-full
+                          py-2
+                          px-3
+                          border border-gray-300
+                          bg-white
+                          rounded-md
+                          shadow-sm
+                          focus:outline-none
+                          focus:ring-indigo-500
+                          focus:border-indigo-500
+                          sm:text-sm
+                        "
+                      >
+                        <option>Item 1</option>
+                        <option>Item 2</option>
+                        <option>Item 3</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label
+                        for="about"
+                        class="block text-sm font-medium text-gray-700"
+                      >
+                        About
+                      </label>
+                      <div class="mt-1">
+                        <textarea
+                          id="about"
+                          name="about"
+                          rows="3"
+                          class="
+                            shadow-sm
+                            focus:ring-indigo-500 focus:border-indigo-500
+                            mt-1
+                            block
+                            w-full
+                            sm:text-sm
+                            border border-gray-300
+                            rounded-md
+                          "
+                          placeholder="you@example.com"
+                        />
+                      </div>
+                      <p class="mt-2 text-sm text-gray-500">
+                        Brief description for your profile. URLs are
+                        hyperlinked.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <!--FORM END-->
+            </div></div>
         </div>
         <div class="">
           <p>
@@ -86,5 +197,6 @@ export default {
   layout: "mainLayout",
   name: "IndexPage",
   async mounted() {},
+  
 };
 </script>
