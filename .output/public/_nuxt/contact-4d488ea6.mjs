@@ -1,0 +1,1 @@
+import{_ as a,c as e,o,a as t}from"./entry-1b459542.mjs";const s={name:"ContactPage",async mounted(){}},c={class:"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"},n=t("div",{class:"mt-10"},[t("p",null,"Contact page")],-1),_=[n];function r(p,d,l,m,i,x){return o(),e("div",c,_)}var f=a(s,[["render",r]]);export{f as default};

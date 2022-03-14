@@ -1,0 +1,57 @@
+{
+  "node_modules/nuxt3/dist/app/entry.mjs": {
+    "file": "entry-1b459542.mjs",
+    "src": "node_modules/nuxt3/dist/app/entry.mjs",
+    "isEntry": true,
+    "dynamicImports": [
+      "layouts/main.vue",
+      "layouts/raffil.vue",
+      "pages/about.vue",
+      "pages/contact.vue",
+      "pages/index.vue"
+    ],
+    "css": [
+      "entry.a3aa13ad.css"
+    ]
+  },
+  "pages/about.vue": {
+    "file": "about-e11eebfe.mjs",
+    "src": "pages/about.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt3/dist/app/entry.mjs"
+    ]
+  },
+  "pages/contact.vue": {
+    "file": "contact-4d488ea6.mjs",
+    "src": "pages/contact.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt3/dist/app/entry.mjs"
+    ]
+  },
+  "pages/index.vue": {
+    "file": "index-3a8c4959.mjs",
+    "src": "pages/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt3/dist/app/entry.mjs"
+    ]
+  },
+  "layouts/main.vue": {
+    "file": "main-92b901d5.mjs",
+    "src": "layouts/main.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt3/dist/app/entry.mjs"
+    ]
+  },
+  "layouts/raffil.vue": {
+    "file": "raffil-943bbcf1.mjs",
+    "src": "layouts/raffil.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt3/dist/app/entry.mjs"
+    ]
+  }
+}

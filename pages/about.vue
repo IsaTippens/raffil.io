@@ -5,8 +5,11 @@
 </template>
 
 <script>
+definePageMeta({
+  layout: "main",
+});
 export default {
-  layout: "mainLayout",
+
   name: "AboutPage",
   async mounted() {},
 };

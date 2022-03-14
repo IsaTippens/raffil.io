@@ -1,0 +1,1 @@
+import{_ as o,c as t,f as a,a as c,j as n,o as s}from"./entry-1b459542.mjs";const r={},_=c("div",null,"No Raffils?",-1);function f(l,d){const e=n("Nuxt");return s(),t("div",null,[_,a(e)])}var u=o(r,[["render",f]]);export{u as default};
